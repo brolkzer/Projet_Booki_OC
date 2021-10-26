@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
 .formulaire
 {
     margin: 1% 4% 0 4%; 
@@ -35,6 +33,7 @@ body
 p
 
 {
+    font-weight: 400;
     font-size: 18px;
     margin: 4px 0px 1px 10px;
 }
@@ -42,11 +41,12 @@ p
 h1
 {
     font-size: 24px;
+    font-weight: 700;
 }
 h2
 {
-    font-size: 22px;
     font-weight: 700;
+    font-size: 22px;
     border: 1px solid rgba(255, 0, 0, 0);
     margin: 50px 0px 0px 40px;
 }
@@ -58,8 +58,8 @@ h1 + p
 
 h3
 {
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     border: 1px solid rgba(255, 0, 0, 0);
     margin: 30px 0px 0px 30px;
 }
@@ -127,7 +127,7 @@ header
 .btn.btn-upperline::before
 {
     content: '';
-    top: -10px;
+    top: -25px;
     right: 0;
     left: 0;
     height: var(--box-sizing);
@@ -146,6 +146,18 @@ header
 .btn.btn-upperline:focus::before
 {
     transform: scaleX(1);
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+li
+{
+    display: flex;
+    justify-content: center;
 }
 
 /* -- Fin du block : header -- */
@@ -225,7 +237,7 @@ button:focus {
 
 #block_filtres
 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bolder;
     display: flex;
     justify-content: flex-start;
@@ -241,7 +253,7 @@ button:focus {
     color: var(--bleu-foncé);
     border: 1px solid rgba(0, 128, 0, 0);
     border-radius: 9999px;
-    padding: 20px;
+    padding: 15px;
     background-color: var(--bleu-clair);
 
 }
@@ -250,8 +262,8 @@ button:focus {
 {
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -259,7 +271,7 @@ button:focus {
 .filtres_liste
 {
     display: flex;
-    margin: 10px 60px 0 0;
+    margin: 10px 30px 0 0;
     padding-left: 0px;
 }
 
@@ -269,7 +281,7 @@ button:focus {
 .animaux
 {
     display: flex;
-    margin: 10px 60px 0 0;
+    margin: 10px 30px 0 0;
     border: 4px solid var(--gris);
     border-radius: 9999px;
 }
@@ -330,16 +342,6 @@ button:focus {
     width: 30%;
     padding: 5px;
     margin-bottom: 15px;
-    box-shadow: 2px 2px 4px ;
-}
-
-.vignetteblock1 a
-{
-    border: transparent;
-    outline: transparent;
-    box-shadow: transparent;
-    text-decoration: transparent;
-    
 }
 
 .imageblock1
@@ -647,16 +649,39 @@ footer
 footer p
 {
     margin: 10px 0 0 0;
+    font-size: 16px;
 }
 
 /* -- Fin du block : footer -- */
 
-@media screen and (max-width: 992px)
+@media screen and (min-width: 768px) and (max-width: 992px)
 {
+    .filtres_liste
+    {
+        width: 100%;
+    }
+
     #hm
     {
         width: 100%;
         order: 1
+    }
+
+    .vignetteblock1
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imageblock1
+    {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .descblock1
+    {
+        min-height: 60px;
     }
 
     .lpp
@@ -677,16 +702,19 @@ footer p
 
     .imageblock2
     {
-        min-height: 170px;
-        max-height: 170px;
-        min-width: 230px;
+        min-height: 250px;
+        height: 250px;
+        min-width: 450px;
+        width: 450px;
+
     }
 
     .vignetteblock2
     {
-        min-height: 170px;
-        max-height: 170px;
+        min-height: 250px;
+        max-height: 250px;
         min-width: 230px;
+        width: 100%;
     }
 
     .aam
@@ -746,7 +774,7 @@ footer p
 
     footer
     {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .foot
@@ -757,11 +785,43 @@ footer p
 
 }
 
-@media (max-width: 768px)
+@media screen and (max-width: 767px)
 {
-    body
+    header 
     {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100%;
     }
+
+    .image_header
+    {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .nav_bar
+    {
+        
+        min-width: 100%;
+        width: 100%;
+        border: 1px solid black;
+        justify-content: center;
+        position: relative;
+        margin: 0;
+    }
+
+    .btn
+    {
+        display: block;
+        position: absolute;
+        left: 0;
+        border: 1px solid rgb(255, 0, 0);
+        min-width: 50%;
+        width: 100%;
+    }
+
+    
 
 }
