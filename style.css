@@ -1,8 +1,3 @@
-.formulaire
-{
-    margin: 1% 4% 0 4%; 
-}
-
 a
 {
     text-decoration-line: none;
@@ -36,6 +31,7 @@ body
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 p
 
@@ -54,8 +50,7 @@ h2
 {
     font-weight: 700;
     font-size: 22px;
-    border: 1px solid rgba(255, 0, 0, 0);
-    margin: 50px 0px 0px 40px;
+    margin: 40px 0px 0px 40px;
 }
 
 h1 + p
@@ -123,18 +118,16 @@ header
 {
     min-width: 176px;
     line-height: 50px;
-    font-size: 16px;
-    border: 1px solid rgba(255, 0, 0, 0);
+    font-size: 18px;
     outline: none;
     position: relative;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
 }
 
-.btn.btn-upperline::before
+.btn-upperline::before
 {
     content: '';
-    top: -25px;
+    bottom: 70px;
     right: 0;
     left: 0;
     height: var(--box-sizing);
@@ -149,8 +142,8 @@ header
     box-sizing: content-box;
 }
 
-.btn.btn-upperline:hover::before,
-.btn.btn-upperline:focus::before
+.btn-upperline:hover::before,
+.btn-upperline:focus::before
 {
     transform: scaleX(1);
 }
@@ -328,6 +321,7 @@ button:focus {
     width: 58%;
     background-color: var(--gris);
     margin-right: 2%;
+    padding-bottom: 20px;
 }
 
 .block1
@@ -390,11 +384,13 @@ button:focus {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    margin-left: 25px;
 }
 
 .lpp
 {
     border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 23px / 23px;
     width: 32%;
     background-color: var(--gris);
 }
@@ -406,8 +402,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 15px;
+    margin: 5px;
 }
 
 .vignetteblock2
@@ -416,8 +411,8 @@ button:focus {
     background-color: rgb(255, 255, 255);
     border-radius: 23px / 23px;
     width: 90%;
-    min-width: 300px;
-    height: 170px;
+    min-width: 280px;
+    height: 180px;
     padding: 5px;
     margin-bottom: 15px;
     display: flex;
@@ -427,8 +422,8 @@ button:focus {
 .imageblock2
 {
     min-width: 150px;
-    width: 40%;
-    min-height: 170px;
+    width: 80%;
+    min-height: 180px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
     object-fit: cover;
@@ -624,7 +619,6 @@ button:focus {
 footer
 {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0);
     background-color: var(--gris);
     display: flex;
     flex-direction: row;
@@ -638,7 +632,7 @@ footer
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 250px;
+    width: 33%;
     margin-bottom: 50px;
 }
 
@@ -666,7 +660,9 @@ footer p
     #hm
     {
         width: 100%;
-        order: 1
+        order: 1;
+        border-radius: 0px;
+        margin-right: 0%;
     }
 
     .vignetteblock1
@@ -686,9 +682,18 @@ footer p
         min-height: 60px;
     }
 
+    .title_lpp
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin-left: 25px;
+    }
+
     .lpp
     {
         width: 100%;
+        border-radius: 0px;
     }
 
     #am
@@ -776,7 +781,7 @@ footer p
 
     footer
     {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .foot
@@ -791,12 +796,15 @@ footer p
 {
     body
     {
-        margin: 15px;
+        margin: 0px;
     }
 
     #main_wrapper
     {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
     }
 
     header 
@@ -815,29 +823,61 @@ footer p
 
     .nav_bar
     {
-        
         min-width: 100%;
-        width: 100%;
-        border: 1px solid black;
-        margin: 0;
+        width: max-content;
+        justify-content: stretch;
     }
 
     ul
     {
-        border: 1px solid rgb(255, 0, 0);
-        width: 100%;
-    }
-
-    li
-    {
-        width: 100%;
-    }
-
-    #main_wrapper ul, #main_wrapper li 
-    {
+        min-width: 100%;
+        width: max-content;
         margin: 0;
+        padding: 0;
     }
 
-    
+    .nav
+    {
+        min-width: 50%;
+    }
+
+    .btn-upperline::before
+    {
+        content: '';
+        bottom: 0px;
+        right: 0;
+        left: 0;
+        height: var(--box-sizing);
+        position: absolute;
+        border: 2px solid var(--gris);
+        transform: scaleX(1);
+    }
+
+    .btn.btn-upperline::before,
+    .btn.btn-upperline::after
+    {
+        box-sizing: content-box;
+    }
+
+    .btn-upperline:hover::before,
+    .btn-upperline:focus::before
+    {
+        border: 2px solid var(--bleu-foncé);
+    }
+
+    #recherche
+    {
+        
+    }
+
+    #hm
+    {
+        width: 100%;
+    }
+
+    .lpp
+    {
+        width: 100%;
+    }
 
 }
