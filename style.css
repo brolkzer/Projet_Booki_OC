@@ -2,6 +2,7 @@ a
 {
     text-decoration-line: none;
     outline: none;
+    color: black;
 }
 
 a:hover
