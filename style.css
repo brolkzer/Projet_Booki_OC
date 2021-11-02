@@ -62,7 +62,6 @@ h3
 {
     font-weight: 700;
     font-size: 18px;
-    border: 1px solid rgba(255, 0, 0, 0);
     margin: 30px 0px 0px 30px;
 }
 
@@ -88,7 +87,6 @@ header
     display: flex;
     min-width: 100%;
     justify-content: space-between;
-    border: 1px solid rgba(255, 0, 0, 0);
     width: inherit;
     margin: 0 70px 10px 70px;
 }
@@ -99,6 +97,11 @@ header
     object-fit: cover;
     justify-content: flex-start;
     margin: 30px 0px 0 90px;
+}
+
+.image_header_mobile
+{
+    visibility: hidden;
 }
 
 .nav_bar
@@ -234,6 +237,16 @@ button:focus {
     color: white;
 }
 
+.envoi_m
+{
+    display: none;
+}
+
+.envoi_m_bg
+{
+    visibility: hidden;
+}
+
 #block_filtres
 {
     font-size: 20px;
@@ -242,7 +255,6 @@ button:focus {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid rgba(0, 0, 0, 0);
     margin: 20px 0 20px 0;
 }
 
@@ -316,7 +328,6 @@ button:focus {
 
 #hm
 {
-    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 23px / 23px;
     width: 58%;
     background-color: var(--gris);
@@ -326,7 +337,6 @@ button:focus {
 
 .block1
 {
-    border: 1px solid rgba(0, 0, 0, 0);
     padding: 3%;
     display: flex;
     flex-wrap: wrap;
@@ -335,7 +345,6 @@ button:focus {
 
 .vignetteblock1
 {
-    border: 1px solid rgba(60, 255, 0, 0);
     background-color: rgb(255, 255, 255);
     border-radius: 23px / 23px;
     width: 30%;
@@ -357,7 +366,6 @@ button:focus {
 {
     display:flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0);
     background-color: rgb(255, 255, 255);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -389,7 +397,6 @@ button:focus {
 
 .lpp
 {
-    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 23px / 23px;
     width: 32%;
     background-color: var(--gris);
@@ -397,7 +404,6 @@ button:focus {
 
 .block2
 {
-    border: 1px solid rgba(0, 0, 0, 0);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -407,7 +413,6 @@ button:focus {
 
 .vignetteblock2
 {
-    border: 1px solid rgba(60, 255, 0, 0);
     background-color: rgb(255, 255, 255);
     border-radius: 23px / 23px;
     width: 90%;
@@ -435,7 +440,6 @@ button:focus {
     flex-direction: column;
     justify-content: space-between;
     word-wrap: normal;
-    border: 1px solid rgba(0, 0, 0, 0);
     background-color: rgb(255, 255, 255);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -463,12 +467,10 @@ button:focus {
 
 .title_am
 {
-    border: 1px solid rgba(255, 0, 0, 0);
     width: 100%;
 }
 #am
 {
-    border: 1px solid rgba(0, 0, 0, 0);
     margin: 30px 30px 30px 30px;
     width: 100%;
     display: flex;
@@ -478,7 +480,6 @@ button:focus {
 
 .aam
 {
-    border: 1px solid rgba(0, 128, 0, 0);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -491,7 +492,6 @@ button:focus {
     width: 25%;
     height: 500px;
     margin: 10px;
-    border: 1px solid rgba(255, 166, 0, 0);
 }
 
 .col2, .col4
@@ -506,7 +506,6 @@ button:focus {
 {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 255, 0);
     border-radius: 18px;
     box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
@@ -517,7 +516,6 @@ button:focus {
 {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 255, 0);
     border-radius: 18px;
     box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
@@ -528,7 +526,6 @@ button:focus {
 {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 255, 0);
     border-radius: 18px;
     box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
@@ -539,7 +536,6 @@ button:focus {
 {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 255, 0);
     border-radius: 18px;
     box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
@@ -550,7 +546,6 @@ button:focus {
 {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 255, 0);
     border-radius: 18px;
     box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
@@ -632,7 +627,7 @@ footer
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 33%;
+    width: 30%;
     margin-bottom: 50px;
 }
 
@@ -652,6 +647,12 @@ footer p
 
 @media screen and (min-width: 768px) and (max-width: 992px)
 {
+    body 
+    {
+        max-width: 992px;
+        width: 100%;
+    }
+
     .filtres_liste
     {
         width: 100%;
@@ -807,18 +808,35 @@ footer p
         margin: 0;
     }
 
+    h2 
+    {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
     header 
     {
-        display: flex;
         flex-wrap: wrap;
-        min-width: 100%;
+    }
+
+    .logo_header
+    {
+        display: flex;
     }
 
     .image_header
     {
-        width: 100%;
+        display: none;
+    }
+
+    .image_header_mobile
+    {
+        visibility: visible;
         justify-content: center;
-        margin-bottom: 50px;
+        width: 60%;
+        object-fit: cover;
+        margin-left: 90%;
+        margin-bottom: 30px;
     }
 
     .nav_bar
@@ -867,15 +885,189 @@ footer p
 
     #recherche
     {
-        
+        margin: 0;
+        padding: 20px;
     }
 
-    #hm
+    .saisie
+    {
+        border-right: transparent;
+    }
+
+    .envoi
+    {
+        display: none;
+    }
+
+    .envoi_m
+    {
+        visibility: visible;
+        font-family: Raleway, sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        height: 61px;
+        width: 60px;
+        border: 1px solid var(--gris);
+        border-radius: 20px;
+        background-color: var(--bleu-foncé);
+        color: white;
+    }
+
+    .envoi_m_bg
+    {
+        visibility: visible;    
+        height: 60px;
+        width: 60px;
+        border: 1px solid var(--gris);
+        border-left: transparent;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: white;
+    }
+
+    .fa-search 
+    {
+        text-align: center;
+        margin-top: 0px;
+    }
+    .fa-search::before
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 23px;
+    }
+
+    .filtres_liste
     {
         width: 100%;
     }
 
+    .economique,
+    .romantique,
+    .familial,
+    .animaux
+    {
+        display: flex;
+        margin: 10px 10px 0 0;
+        border: 3px solid var(--gris);
+        border-radius: 9999px;
+    }
+
+    .economique:hover,
+    .familial:hover,
+    .romantique:hover,
+    .animaux:hover
+    {
+        background-color: var(--bleu-clair);
+    }   
+    
+    #hm
+    {
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+        background-color: white;
+        order: 1;
+    }
+
+    .vignetteblock1
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title_lpp
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
     .lpp
+    {
+        width: 100%;
+        border-radius: 0;        
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+
+    .vignetteblock2
+    {
+        width: 90%;
+        box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.01);
+    }
+
+    .block2
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    #am
+    {
+        order: 1;
+        margin: 0;
+    }
+
+    .aam
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .image_am
+    {
+        min-height: 150px;
+        height: 150px;
+        min-width: 100%;
+    }
+
+    .cols
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col1, .col3 
+    {
+        width: 100%;
+        min-height: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 75px;
+    }
+
+    .col2, .col4 
+    {
+        width: 100%;
+        min-height: 450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 0px;
+    }
+
+    .vignette_cols
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 18px;
+        box-shadow: 0px 5px 0px var(--gris);
+        min-height: 150px;
+        height: 200px;
+    }
+
+    footer
+    {
+        order: 1;
+    }
+
+    .foot 
     {
         width: 100%;
     }
