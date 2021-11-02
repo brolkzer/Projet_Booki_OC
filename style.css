@@ -98,7 +98,7 @@ header
     width: 110px;
     object-fit: cover;
     justify-content: flex-start;
-    margin: 30px 0px 0 90px;
+    margin: 0px 0px 0 90px;
 }
 
 .image_header_mobile
@@ -839,10 +839,9 @@ footer p
     .image_header_mobile
     {
         visibility: visible;
-        width: 60%;
+        width: 50%;
         object-fit: cover;
         margin-bottom: 20px;
-        align-items: center;
     }
 
     .nav_bar
