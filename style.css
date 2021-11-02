@@ -349,6 +349,7 @@ button:focus {
 {
     background-color: rgb(255, 255, 255);
     border-radius: 23px / 23px;
+    box-shadow: 1px 1px 20px rgb(200, 200, 200);
     width: 30%;
     padding: 5px;
     margin-bottom: 15px;
@@ -424,6 +425,7 @@ button:focus {
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
+    box-shadow: 1px 1px 20px rgb(200, 200, 200);
 }
 
 .imageblock2
@@ -503,13 +505,17 @@ button:focus {
     justify-content: space-between;
 }
 
+.vignette_cols
+{
+    box-shadow: 1px 1px 20px rgb(200, 200, 200);
+}
+
 .vignette_col1,
 .vignette_col3
 {
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
     height: 100%;
 }
@@ -519,7 +525,6 @@ button:focus {
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
     height: 260px;
 }
@@ -529,7 +534,6 @@ button:focus {
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
     height: 190px;
 }
@@ -539,7 +543,6 @@ button:focus {
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
     height: 225px;
 }
@@ -549,7 +552,6 @@ button:focus {
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    box-shadow: 0px 5px 0px var(--gris);
     width: 100%;
     height: 225px;
 }
@@ -772,7 +774,7 @@ footer p
         flex-direction: column;
         width: 100%;
         border-radius: 18px;
-        box-shadow: 0px 5px 0px var(--gris);
+        box-shadow: 1px 1px 20px rgb(200, 200, 200);
         min-height: 450px;
         height: 450px;
     }
@@ -819,11 +821,14 @@ footer p
     header 
     {
         flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
     }
 
     .logo_header
     {
         display: flex;
+        justify-content: center;
     }
 
     .image_header
@@ -834,18 +839,17 @@ footer p
     .image_header_mobile
     {
         visibility: visible;
-        justify-content: center;
         width: 60%;
         object-fit: cover;
-        margin-left: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        align-items: center;
     }
 
     .nav_bar
     {
         min-width: 100%;
         width: max-content;
-        justify-content: stretch;
+        margin: 0;
     }
 
     ul
@@ -894,6 +898,8 @@ footer p
     .saisie
     {
         border-right: transparent;
+        min-width: 100px;
+        width: 200px;
     }
 
     .envoi
@@ -998,13 +1004,14 @@ footer p
     .vignetteblock2
     {
         width: 90%;
-        box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.01);
+        box-shadow: 1px 1px 20px rgb(200, 200, 200);
     }
 
     .block2
     {
         padding: 0;
         margin: 0;
+        align-items: center;
     }
 
     #am
@@ -1059,7 +1066,7 @@ footer p
         flex-direction: column;
         width: 100%;
         border-radius: 18px;
-        box-shadow: 0px 5px 0px var(--gris);
+        box-shadow: 1px 1px 20px rgb(200, 200, 200);
         min-height: 150px;
         height: 200px;
     }
