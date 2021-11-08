@@ -783,8 +783,8 @@ footer p
         width: 100%;
         border-radius: 18px;
         box-shadow: 1px 1px 20px rgb(200, 200, 200);
-        min-height: 450px;
-        height: 450px;
+        min-height: 500px;
+        height: 500px;
     }
 
     .desc_col h3 
